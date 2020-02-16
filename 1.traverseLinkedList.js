@@ -3,6 +3,7 @@
 
 class Node {
   constructor(val) {
+    this.head = null
     this.next = null
     this.val = val
   }
@@ -22,11 +23,18 @@ n3.next = n4
 n4.next = n5
 
 // Implement your code to traverse
-const traverse = (node) => {
-let node = new Node
-if(node){
-  this.val = node
-}
+const traverse = (val) => {
+ let newNode = new Node(val);
+       if(this.val === null){
+       this.val = newNode;
+      } 
+       else { 
+       let curr = this.val;
+       while(curr.next !== null){
+       curr = this.next;
+      }
+       curr.next = newNode;
+      }
 }
 
 // example

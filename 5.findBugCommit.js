@@ -109,7 +109,9 @@ let commits = [
 ]
 
 const identifyFirstBadCommit = (commits) => {
+for(let elem of arr){
 
+}
 }
 
 identifyFirstBadCommit(commits)
