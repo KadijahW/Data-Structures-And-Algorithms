@@ -9,7 +9,7 @@
 
 const occurrenceFilter = (arr, n) => {
     let obj ={}
-  console.log(arr)
+//   console.log(arr)
     // console.log(obj)
   
   for(let i = 0; i < arr.length; i++){
@@ -19,9 +19,8 @@ const occurrenceFilter = (arr, n) => {
       obj[arr[i]] = 1
     }
   }
-  console.log(obj)
+//   console.log(obj)
   let newArr = []
-  // return obj
   for(let j in obj){
     if(obj[j] >= n){
      newArr.push(j) 
