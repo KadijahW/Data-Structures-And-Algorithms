@@ -5,6 +5,13 @@
 
 
 const recursiveSum = (arr) => {
+    let sum = 0
+for(let elem of arr){
+    if(elem){
+        sum += elem
+    }
+}
+return sum;
 
 }
 
