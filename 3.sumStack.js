@@ -34,7 +34,13 @@ s.push(14)
 
 // Implement your function here
 const sum = (stack) => {
+  let stack = new Stack
+  let sum = 0
+for(elem of stack){
 
+}
+
+return sum
 }
 
 sum(s) // should return 482

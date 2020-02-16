@@ -46,7 +46,19 @@ h.right = i;
 
 // Implement your code here
 const printTreeAlphabeticalOrder = (root) => {
-
+ let val = new BinaryTreeNode(root)
+ if(this.val !== null){
+    this.val = root
+ }
+ add = (val) => {
+   while(val){
+     if(val < root){
+       this.left = val
+     }else{
+       this.right = val
+     }
+   }
+ }
 }
 
 printTreeAlphabeticalOrder(f)

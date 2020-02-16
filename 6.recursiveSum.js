@@ -11,9 +11,19 @@ for(let elem of arr){
         sum += elem
     }
 }
-return sum;
+// const recursiveSum = (arr) => {
+//     for(let elem of arr){
+//         if(elem){
+//            sum(elem)
+//         }
+//     }
+//     }
+    
+//     const sum = (elem) => {
+//     // console.log(elem)
+    }
+    
 
-}
 
 const arr1 = [5, 2, 9, 11]
 recursiveSum(arr1) // should return 27
