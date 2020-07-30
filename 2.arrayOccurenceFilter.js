@@ -23,7 +23,8 @@ const occurrenceFilter = (arr, n) => {
   let newArr = []
   for(let j in obj){
     if(obj[j] >= n){
-     newArr.push(j) 
+      newArr.push(Number(j))
+
     }
   }
   return newArr
