@@ -33,8 +33,15 @@ s.push(91)
 s.push(14)
 
 // Implement your function here
-const sum = (stack) => {
-  let stack1 = new Stack
+const sum = (s) => {
+  let result = 0;
+  let num;
+  while (!s.isEmpty()) {
+    num = s.pop()
+    // console.log(num)
+    result += num;
+  }
+  console.log(result)
 }
 
 sum(s) // should return 482
