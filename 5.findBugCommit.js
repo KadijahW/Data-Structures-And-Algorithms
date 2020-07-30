@@ -109,9 +109,27 @@ let commits = [
 ]
 
 const identifyFirstBadCommit = (commits) => {
-for(let elem of arr){
+  let front = 0;
+  let back = commits.length -1
+  
 
+  while(front <= back){
+    let mid = Math.floor((front + back) /2)
+    let crrCommit = commits[mid]
+    let prevCommit = commits[mid - 1]
+
+if(crrCommit.status === "bad" && prevCommit.status === "good"){
+  return {
+    index: mid,
+    commit: crrCommit
+  }
+}else if(crrCommit.status === "bad"){
+  back = mid - 1
+}else{
+front = mid + 1
 }
+  }
+  return false
 }
 
 identifyFirstBadCommit(commits)
