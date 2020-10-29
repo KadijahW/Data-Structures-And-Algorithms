@@ -13,20 +13,20 @@
 // }
 // }
 
-const recursiveSum = (arr) => {
-    sum(arr)
-}
-const sum = (arr) => {
-let count = 0
-for(let elem of arr){
-if(arr.length === null){
-console.log(count)
-}else {
-console.log(count += elem)
-}
+// const recursiveSum = (arr) => {
+//   if(arr.length === 1){return arr[0]}arr.push(arr[0] + arr[1])
+//   console.log(arr)
+//     let sum = 0
+// arr.shift()
+// arr.shift()
+// console.log(arr)
+// recursiveSum(arr)
+// }
 
-}
-}
+const recursiveSum = (arr) => {
+    if(!arr.length) return 0
+    return arr.pop() + recursiveSum(arr)
+  }
     
 const arr1 = [5, 2, 9, 11]
 recursiveSum(arr1) // should return 27
