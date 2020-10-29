@@ -1,5 +1,6 @@
 // Q4.
-// Write a function `range` that takes in a Queue of numbers, returns the range (difference between the minimum and maximum).
+// Write a function `range` that takes in a Queue of numbers, 
+//returns the range (difference between the minimum and maximum).
 
 class Queue {
   constructor() {
@@ -36,8 +37,18 @@ q.enqueue(98)
 
 // Write your function here
 const range = (queue) => {
-
-}
+  let min = q.peek();
+  let max = q.peek();
+  while(!queue.isEmpty()){
+    let crr = queue.dequeue()
+    if(crr > max){
+      max = crr
+    }else if(crr < min){
+      min = crr
+    }
+  }
+  console.log(min - max)
+  }
 
 // Example
 range(q) // should return 243
