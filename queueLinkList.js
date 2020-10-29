@@ -14,11 +14,11 @@ class Queue {
 
     enqueue(val) {
         let node = new Node(val);
-        let current;
+        // let current;
 
         if(this.head === null){
            this.head = node
-            current = node
+            // current = node
             this.tail = node
         } else{
             this.tail.next = node 
