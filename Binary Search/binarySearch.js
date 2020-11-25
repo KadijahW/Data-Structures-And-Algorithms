@@ -3,7 +3,7 @@ const binarySearch = (nums, target) => {
     let high = nums.length - 1
     
     while (low <= high) {
-        let middle = Math.floor((low + high) / 2) //low [-1,0,3] high [5,9,12]
+        let middle = Math.floor((low + high) / 2) 
         let guess = nums[middle] 
        
         if (guess === target) {
